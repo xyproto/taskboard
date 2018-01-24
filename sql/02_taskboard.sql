@@ -1,3 +1,5 @@
+USE taskboard;
+
 -- table for the entity - "Board[board]"
 CREATE TABLE `BOARD` (
 	ID BIGINT NOT NULL AUTO_INCREMENT,

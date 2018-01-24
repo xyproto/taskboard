@@ -52,8 +52,8 @@ func TestListFunction(t *testing.T) {
 		Column(T.USER_C_NAME).
 		Column(db.Null()).
 		ListInto(func(id *int64, name string, dummy string) {
-		fmt.Printf("=====> Id: %v, Name: %v -- %v\n", *id, name, dummy)
-	})
+			fmt.Printf("=====> Id: %v, Name: %v -- %v\n", *id, name, dummy)
+		})
 
 	if err != nil {
 		t.Error("There was an error: ", err)
@@ -72,8 +72,8 @@ func TestListFunctionStruct(t *testing.T) {
 		Column(T.USER_C_NAME).
 		//List(&users)
 		ListInto(func(u dto.BoardUserDTO) {
-		fmt.Println("X====> ", *u.Name)
-	})
+			fmt.Println("X====> ", *u.Name)
+		})
 
 	if err != nil {
 		t.Error("There was an error: ", err)
