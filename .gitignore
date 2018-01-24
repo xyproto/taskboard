@@ -1,3 +1,4 @@
 /taskboard
 *.log
 /bower_components
+*.bak
